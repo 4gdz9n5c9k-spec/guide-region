@@ -1,1 +1,302 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Guide Region: explore Almaty's best sights and plan your trip."><title>Guide Region | Sights of Almaty</title><link rel="stylesheet" href="style.css"></head><body><header class="header"><a class="logo" href="#home">GUIDE REGION</a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav" aria-label="Main navigation"><a href="#places">TOP PLACES</a><a href="#routes">ROUTES</a><a href="#tips">TIPS FOR TOURISTS</a><a href="#plan">PLAN A TRIP</a></nav></header><main id="home"><section class="hero"><div class="hero-content"><p class="eyebrow">Guide Region</p><h1>SIGHTS OF ALMATY</h1><p class="subtitle">Explore the amazing places of Almaty</p><a class="btn" href="#places">EXPLORE NOW →</a></div></section><section id="places" class="section"><div class="section-heading"><div><p class="overline">DISCOVER THE CITY</p><h2>PLAN YOUR TRIP</h2></div><p>Mountains, lakes, and breathtaking views.</p></div><div class="places-grid"><article class="place-card"><img src="images/medeu.jpg" alt="Mountain landscape near Medeu" loading="lazy"><div class="place-copy"><h3>MEDEU</h3><p>HIGH MOUNTAIN SKATING RINK</p><span>Mountain adventure · ★ 4.8</span></div></article><article class="place-card"><img src="images/big-almaty-lake.jpg" alt="Blue alpine lake among mountains" loading="lazy"><div class="place-copy"><h3>BIG ALMATY LAKE</h3><p>BEAUTIFUL MOUNTAIN LOCATION</p><span>Nature escape · ★ 4.9</span></div></article><article class="place-card"><img src="images/kok-tobe.jpg" alt="Panoramic mountain landscape" loading="lazy"><div class="place-copy"><h3>KOK TOBE</h3><p>PANORAMIC VIEW OF ALMATY</p><span>City viewpoint · ★ 4.7</span></div></article></div></section><section id="routes" class="section muted"><p class="overline">YOUR NEXT ADVENTURE</p><h2>POPULAR ROUTES</h2><div class="route-grid"><article class="route"><span>01 / HALF DAY</span><h3>City Highlights</h3><p>Kok Tobe → Panfilov Park → Green Bazaar</p><button class="outline route-select" data-route="City Highlights">CHOOSE ROUTE →</button></article><article class="route"><span>02 / FULL DAY</span><h3>Mountain Escape</h3><p>Medeu → Shymbulak → Scenic mountain viewpoints</p><button class="outline route-select" data-route="Mountain Escape">CHOOSE ROUTE →</button></article><article class="route"><span>03 / FULL DAY</span><h3>Nature & Lakes</h3><p>Big Almaty Lake → Mountain photo stops</p><button class="outline route-select" data-route="Nature & Lakes">CHOOSE ROUTE →</button></article></div></section><section id="tips" class="section"><p class="overline">TRAVEL SMART</p><h2>TIPS FOR TOURISTS</h2><div class="tips-grid"><article><h3>☀ Weather</h3><p>Bring layers and check mountain forecasts before heading out.</p></article><article><h3>↗ Transport</h3><p>Plan extra time for mountain roads and use official transport services.</p></article><article><h3>♡ Safety</h3><p>Carry water, share your route, and use marked hiking trails.</p></article></div></section><section id="plan" class="section muted"><div class="form-layout"><div><p class="overline">MAKE IT YOURS</p><h2>PLAN YOUR ALMATY TRIP</h2><p>Choose your route and group size. Create a printable PDF checklist for your adventure.</p><p class="emergency"><strong>Emergency services:</strong> 112 (Kazakhstan)</p></div><form id="trip-form"><label for="route">YOUR ROUTE</label><select id="route" required><option value="">Select a route</option><option>City Highlights</option><option>Mountain Escape</option><option>Nature & Lakes</option></select><label for="days">DURATION (DAYS)</label><input id="days" type="number" min="1" max="30" value="1" required><label for="group">GROUP SIZE</label><input id="group" type="number" min="1" max="100" value="2" required><label for="email">EMAIL</label><input id="email" type="email" placeholder="you@example.com" required><label for="phone">PHONE (OPTIONAL)</label><input id="phone" type="tel" placeholder="+7 700 000 00 00"><button class="btn submit" type="submit">GENERATE PDF CHECKLIST →</button><p id="form-status" role="status" aria-live="polite"></p></form></div></section></main><footer class="footer"><div><a class="logo" href="#home">GUIDE REGION</a><p>Discover Almaty, one destination at a time.</p></div><div><h3>EXPLORE</h3><a href="#places">Top Places</a><a href="#routes">Routes</a><a href="#tips">Tips for Tourists</a></div><div><h3>HELP & SETTINGS</h3><p>Emergency: 112</p><button id="theme-toggle" class="outline" type="button">☾ SWITCH TO DARK MODE</button></div><p class="copyright">© 2026 Guide Region. Educational tourism project. Photos sourced from the supplied Figma design.</p></footer><script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script><script src="script.js" defer></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="Guide Region: explore Almaty's best sights and plan your trip." name="description"/>
+  <title>
+   Guide Region | Sights of Almaty
+  </title>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="header">
+   <a class="logo" href="#home">
+    GUIDE REGION
+   </a>
+   <button aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">
+    ☰
+   </button>
+   <nav aria-label="Main navigation" class="nav">
+    <a href="#places">
+     TOP PLACES
+    </a>
+    <a href="#routes">
+     ROUTES
+    </a>
+    <a href="#tips">
+     TIPS FOR TOURISTS
+    </a>
+    <a href="#plan">
+     PLAN A TRIP
+    </a>
+   </nav>
+  </header>
+  <main id="home">
+   <section class="hero">
+    <div class="hero-content">
+     <p class="eyebrow">
+      Guide Region
+     </p>
+     <h1>
+      SIGHTS OF ALMATY
+     </h1>
+     <p class="subtitle">
+      Explore the amazing places of Almaty
+     </p>
+     <a class="btn" href="#places">
+      EXPLORE NOW →
+     </a>
+    </div>
+   </section>
+   <section class="section" id="places">
+    <div class="section-heading">
+     <div>
+      <p class="overline">
+       DISCOVER THE CITY
+      </p>
+      <h2>
+       PLAN YOUR TRIP
+      </h2>
+     </div>
+     <p>
+      Mountains, lakes, and breathtaking views.
+     </p>
+    </div>
+    <div class="places-grid">
+     <article class="place-card">
+      <img alt="Mountain landscape near Medeu" loading="lazy" src="images/medeu.jpg"/>
+      <div class="place-copy">
+       <h3>
+        MEDEU
+       </h3>
+       <p>
+        HIGH MOUNTAIN SKATING RINK
+       </p>
+       <span>
+        Mountain adventure · ★ 4.8
+       </span>
+      </div>
+     </article>
+     <article class="place-card">
+      <img alt="Blue alpine lake among mountains" loading="lazy" src="images/big-almaty-lake.jpg"/>
+      <div class="place-copy">
+       <h3>
+        BIG ALMATY LAKE
+       </h3>
+       <p>
+        BEAUTIFUL MOUNTAIN LOCATION
+       </p>
+       <span>
+        Nature escape · ★ 4.9
+       </span>
+      </div>
+     </article>
+     <article class="place-card">
+      <img alt="Panoramic mountain landscape" loading="lazy" src="images/kok-tobe.jpg"/>
+      <div class="place-copy">
+       <h3>
+        KOK TOBE
+       </h3>
+       <p>
+        PANORAMIC VIEW OF ALMATY
+       </p>
+       <span>
+        City viewpoint · ★ 4.7
+       </span>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section class="section muted" id="routes">
+    <p class="overline">
+     YOUR NEXT ADVENTURE
+    </p>
+    <h2>
+     POPULAR ROUTES
+    </h2>
+    <div class="route-grid">
+     <article class="route">
+      <span>
+       01 / HALF DAY
+      </span>
+      <h3>
+       City Highlights
+      </h3>
+      <p>
+       Kok Tobe → Panfilov Park → Green Bazaar
+      </p>
+      <button class="outline route-select" data-route="City Highlights">
+       CHOOSE ROUTE →
+      </button>
+     </article>
+     <article class="route">
+      <span>
+       02 / FULL DAY
+      </span>
+      <h3>
+       Mountain Escape
+      </h3>
+      <p>
+       Medeu → Shymbulak → Scenic mountain viewpoints
+      </p>
+      <button class="outline route-select" data-route="Mountain Escape">
+       CHOOSE ROUTE →
+      </button>
+     </article>
+     <article class="route">
+      <span>
+       03 / FULL DAY
+      </span>
+      <h3>
+       Nature &amp; Lakes
+      </h3>
+      <p>
+       Big Almaty Lake → Mountain photo stops
+      </p>
+      <button class="outline route-select" data-route="Nature &amp; Lakes">
+       CHOOSE ROUTE →
+      </button>
+     </article>
+    </div>
+   </section>
+   <section class="section" id="tips">
+    <p class="overline">
+     TRAVEL SMART
+    </p>
+    <h2>
+     TIPS FOR TOURISTS
+    </h2>
+    <div class="tips-grid">
+     <article>
+      <h3>
+       ☀ Weather
+      </h3>
+      <p>
+       Bring layers and check mountain forecasts before heading out.
+      </p>
+     </article>
+     <article>
+      <h3>
+       ↗ Transport
+      </h3>
+      <p>
+       Plan extra time for mountain roads and use official transport services.
+      </p>
+     </article>
+     <article>
+      <h3>
+       ♡ Safety
+      </h3>
+      <p>
+       Carry water, share your route, and use marked hiking trails.
+      </p>
+     </article>
+    </div>
+   </section>
+   <section class="section muted" id="plan">
+    <div class="form-layout">
+     <div>
+      <p class="overline">
+       MAKE IT YOURS
+      </p>
+      <h2>
+       PLAN YOUR ALMATY TRIP
+      </h2>
+      <p>
+       Choose your route and group size. Create a printable PDF checklist for your adventure.
+      </p>
+      <p class="emergency">
+       <strong>
+        Emergency services:
+       </strong>
+       112 (Kazakhstan)
+      </p>
+     </div>
+     <form id="trip-form">
+      <label for="route">
+       YOUR ROUTE
+      </label>
+      <select id="route" required="">
+       <option value="">
+        Select a route
+       </option>
+       <option>
+        City Highlights
+       </option>
+       <option>
+        Mountain Escape
+       </option>
+       <option>
+        Nature &amp; Lakes
+       </option>
+      </select>
+      <label for="days">
+       DURATION (DAYS)
+      </label>
+      <input id="days" max="30" min="1" required="" type="number" value="1"/>
+      <label for="group">
+       GROUP SIZE
+      </label>
+      <input id="group" max="100" min="1" required="" type="number" value="2"/>
+      <label for="email">
+       EMAIL
+      </label>
+      <input id="email" placeholder="you@example.com" required="" type="email"/>
+      <label for="phone">
+       PHONE (OPTIONAL)
+      </label>
+      <input id="phone" placeholder="+7 700 000 00 00" type="tel"/>
+      <button class="btn submit" type="submit">
+       GENERATE PDF CHECKLIST →
+      </button>
+      <p aria-live="polite" id="form-status" role="status">
+      </p>
+     </form>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div>
+    <a class="logo" href="#home">
+     GUIDE REGION
+    </a>
+    <p>
+     Discover Almaty, one destination at a time.
+    </p>
+   </div>
+   <div>
+    <h3>
+     EXPLORE
+    </h3>
+    <a href="#places">
+     Top Places
+    </a>
+    <a href="#routes">
+     Routes
+    </a>
+    <a href="#tips">
+     Tips for Tourists
+    </a>
+   </div>
+   <div>
+    <h3>
+     HELP &amp; SETTINGS
+    </h3>
+    <p>
+     Emergency: 112
+    </p>
+    <button class="outline" id="theme-toggle" type="button">
+     ☾ SWITCH TO DARK MODE
+    </button>
+   </div>
+   <p class="copyright">
+    © 2026 Guide Region. Educational tourism project. Photos sourced from the supplied Figma design.
+   </p>
+  </footer>
+  <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+  </script>
+  <script defer="" src="script.js">
+  </script>
+ </body>
+</html>
